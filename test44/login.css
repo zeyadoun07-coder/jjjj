@@ -1,0 +1,77 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    background:  #415ebb;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+
+.card {
+    width: 400px;
+    background-color: rgb(26, 42, 136);
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: black;
+    text-align: center;
+    align-items: center;
+    border: 4px solid gray;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+
+.card h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+
+.card input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #444;
+    background-color: #f0f2f5;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s ease;
+    margin:5px;
+    padding: 20px;
+}
+
+
+
+
+.card button {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: rgb(24, 37, 216);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    margin: 5px;
+}
+
+.card button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+

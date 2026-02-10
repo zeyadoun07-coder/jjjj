@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<center>
+    <h1 style="background-color: rgb(68, 27, 107); color: rgb(133, 84, 189);">
+        صفحة تسجيل الدخول الخاصة بالامتحان الإلكتروني
+    </h1>
+
+    <h2 style="color: rgb(28, 27, 29);">
+        يجب كتابة الاسم والكود كما هو مع مراعاة المسافات
+    </h2>
+
+    <div class="card">
+        <input type="text" placeholder="ادخل اسمك ثنائي" id="username"><br>
+        <input type="text" placeholder="ادخل الكود" id="password"><br>
+        <button onclick="test()">اضغط للدخول إلى الامتحان</button>
+    </div>
+
+    <h1 style="background-color: rgb(13, 14, 105);">
+        تحت إشراف أستاذة دعاء عون
+    </h1>
+</center>
+
+<script>
+function test(){
+    let u = document.getElementById("username").value.trim();
+    let p = document.getElementById("password").value.trim();
+
+    // بيانات الطلاب
+    let students = [
+        {name:"رحمة زكريا", code:"78785"},
+        {name:"مريم نبيل", code:"55421"},
+        {name:"حبيبة شريف", code:"15432"},
+        {name:"ملك زين", code:"13046"},
+        {name:"جنى عراقي", code:"65321"},
+        {name:"رؤى ابراهيم", code:"01345"},
+        {name:"يوسف وليد", code:"75481"},
+        {name:"لمار الهابط", code:"01550"},
+        {name:"جنا عون", code:"00154"},
+        {name:"سلمى اسلام", code:"53218"},
+        {name:"مروة النشار", code:"43201"},
+        {name:"حبيبة سامح", code:"33213"},
+        {name:"هنا السقا", code:"55541"},
+        {name:"سما سراج", code:"11321"}
+
+
+    ];
+
+    // فحص الدخول
+    for(let i = 0; i < students.length; i++){
+        if(u === students[i].name && p === students[i].code){
+            window.location.href = "exam.html";
+            return;
+        }
+    }
+
+    alert("يوجد خطأ في الاسم أو الكود، حاول مرة أخرى");
+}
+</script>
+
+</body>
+</html>

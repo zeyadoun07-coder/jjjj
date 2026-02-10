@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container">
+<div id="startPage" class="active">
+  <input type="text" id="studentName" placeholder="اسمك" />
+  <select  id="studentGrade" >
+                <option value="stsec1">اولى ثانوي</option>
+
+            <option value="prep3">تالته اعدادي</option>
+
+
+        <option value="prep3">تالته اعدادي</option>
+
+
+        <option value="rdsec3">تالتة ثانوي</option>
+    <option value="first" >أولى اعدادي </option>
+  </select>
+  <br><br>
+  <button onclick="S()">ابدأ</button>
+</div>
+<div id="quizPage" class="page">
+  <div>الاسم: <span id="n">---</span></div>
+  <div>الصف: <span id="g">---</span></div>
+  <div>الوقت: <span id="t">15:00</span></div>
+  <div class="bar-container"><div id="tpb"></div></div>
+  <div id="qc">السؤال 1 من 10</div>
+  <div id="q">...</div>
+  
+  <div class="option" id="o1" onclick="sel(0)"></div>
+  <div class="option" id="o2" onclick="sel(1)"></div>
+  <div class="option" id="o3" onclick="sel(2)"></div>
+  <div class="option" id="o4" onclick="sel(3)"></div>
+  
+  <button onclick="prv()">السابق</button>
+  <button onclick="nxt()">التالي</button>
+  <button onclick="end()">إنهاء</button>
+  
+<h2 style="background-color: rgb(109, 152, 233); color: rgb(1, 36, 24); margin: 10px;" >  </h2>
+
+  <div class="bar-container"><div id="pb"></div></div>
+</div>
+<div class="cointat2">
+  <h1>اختبارات  الكترونية للمرحلتين الاعدادية والثانوية</h1>
+ <h4>يجب قراءة هذه التعليمات جيدا قبل البدء في الامتحان</h4>
+  <ul>
+    <li>يؤدى الامتحان لمرة واحدة فقط</li>
+    <li>مدة الامتحان تختلف عن كل مرحلة</li>
+    <li>في النهاية يظهر لك نتيجتك وأخطاؤك انظر الى الأسفل فى النهاية</li>
+    <li>في النهايه ترسل الدرجه تلقائيا</li>
+<li>الامتحان متاح لمدة28ساعة</li>
+<li>يجب اختيار المرحله قبل البدء في الأمتحان</li>
+  </ul>
+</div>
+<div id="resultPage" class="page">
+  <h3>النتيجة: <span id="fs">0</span> / <span id="tq">10</span></h3>
+  <div id="dr"></div>
+</div>
+</div>
+<script src="./dd.js"></script>
+</body>
+</html>

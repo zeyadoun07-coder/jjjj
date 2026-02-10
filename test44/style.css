@@ -1,0 +1,126 @@
+* {
+            box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+background: #a7c8e9;
+padding: 15px;
+font-size: 18px;
+}
+.page {
+ display: none;
+ max-width: 800px;
+ margin: 20px auto;
+ padding: 25px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.page.active {
+    display: block;
+}
+h2, h3, h4 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+input, select, button {
+ width: 100%;
+ padding: 12px;
+ margin: 8px 0;
+ border: 1px solid #ccc;
+ border-radius: 8px;
+ font-size: 16px;
+}
+button {
+background: #3498db;
+color: white;
+border: none;
+cursor: pointer;
+transition: bakground 0.3s;
+}
+button:hover {
+    background: #2980b9;
+}
+.option {
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fafafa;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.option:hover {
+    background: #eef7ff;
+}
+.option.selected {
+    background: #d0e7ff;
+    border-color: #3498db;
+    font-weight: bold;
+}
+#progress, #timerProgress {
+    height: 10px;
+    background: #ecf0f1;
+    border-radius: 5px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+#progress-bar, #timerProgressBar {
+height: 100%;
+background: #3498db;
+width: 0%;
+}
+#timerProgressBar {
+background: #2ecc71;
+}
+#question-counter {
+text-align: center;
+margin: 10px 0;
+color: #7f8c8d; 
+font-weight: bold;
+}
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.nav-buttons button {
+    flex: 1;
+}
+@media (max-width: 600px) {
+    body { padding: 10px; }
+    .page { padding: 15px; }
+}
+.cointat2  {
+height: 420px;        
+background: linear-gradient(135deg, #6976b4, #a8abd1);
+border-radius: 20px;
+box-shadow:  rgba(0,0,0,0.3);
+color: rgb(102, 11, 11);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+justify-content: center;
+padding: 20px;
+}
+.cointat2 h1,h4 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.container{
+    height: px;
+    width: 1100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 100px;
+}
